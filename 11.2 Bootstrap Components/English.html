@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>typing test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="third.html"><img src="./box-seam.svg" alt="moveit brand icon" height="30">Type It</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Google search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Check</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">First</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-1 rounded-1 d-flex flex-wrap" tabindex="0">
+    <h4 id="scrollspyHeading1">First heading</h4>
+    <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+    <div class="text-nowrap bg-body-secondary border" style="width: 8rem;">
+      This text should overflow the parent.
+      <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping"></span>
+          <p class="lead text-body-secondary">
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+          </p>
+        </div>
+      </div>
+    </div>
+    <h4 id="scrollspyHeading2">Second heading</h4>
+    <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+    <h4 id="scrollspyHeading3">Third heading</h4>
+    <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+    <h4 id="scrollspyHeading4">Fourth heading</h4>
+    <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+ 
+    <h4 id="scrollspyHeading5">Fifth heading</h4>
+    <div class="card">
+      <div class="card-body">
+        <p class="lead">
+          This is a lead paragraph. It stands out from regular paragraphs.
+        </p>
+        This is some text within a card body.
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>
+</body>
+</html>
