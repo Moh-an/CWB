@@ -68,6 +68,15 @@ function toggleMode(){
         //button.textContent='Switching to read mode';
     }
 }
+function updateDate(){
+    const now=new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
+    const currentDate=now.toLocaleDateString(undefined,options);
+    document.getElementById('date').textContent = currentDate;
+}
+setInterval(updateDate,1000);
+updateDate();
 
 startButton.addEventListener('click', startTimer);
 stopButton.addEventListener('click', stopTimer);

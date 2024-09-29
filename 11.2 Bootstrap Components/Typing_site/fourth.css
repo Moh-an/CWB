@@ -5,7 +5,7 @@ body {
 }
 
 .words-section {
-    max-height: 200px;
+    
     overflow-y: auto;
     right:4%;
     color: #ff6347; /* Tomato color */
