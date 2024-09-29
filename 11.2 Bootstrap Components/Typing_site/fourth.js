@@ -52,6 +52,22 @@ function resumeTimer() {
         resumeButton.disabled = true;
     }
 }
+function toggleMode(){
+    const eyeCatchtext=document.querySelector('.eye-catching-text');
+    const readingText=document.querySelector('.reading-mode');
+    const button=document.querySelector('.toggle-button');
+    
+    if(eyeCatchtext.classList.contains('active')){
+        eyeCatchtext.classList.remove('active');
+         readingText.classList.add('active');
+        //button.textContent = 'Switching Mode';
+    }
+    else{
+        readingText.classList.remove('active');
+        eyeCatchtext.classList.add('active');
+        //button.textContent='Switching to read mode';
+    }
+}
 
 startButton.addEventListener('click', startTimer);
 stopButton.addEventListener('click', stopTimer);

@@ -7,25 +7,120 @@ body {
 .words-section {
     max-height: 200px;
     overflow-y: auto;
+    right:4%;
+    color: #ff6347; /* Tomato color */
+    background-color: #f5f5f5; /* Default background for reading mode */
+    color: #333; /* Default text color for reading mode */
+    font-family: 'Georgia', serif; /* Serif font for reading mode */
+    line-height: 1.6; /* Increased line spacing for reading mode */
+    padding: 20px;
+}.eye-catching-text, .reading-mode {
+   
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide both modes initially */
 }
-
+.eye-catching-text {
+    background-color: #ffffe0; /* Light yellow background */
+    color: #ff6347; /* Tomato color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: bold;
+}
+.reading-mode {
+    background-color: #fff; /* White background for reading mode */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+.active {
+    display: block; /* Show the active mode */
+}
+.toggle-button {
+    position: absolute;
+    
+    right: 17%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .typing-section {
     position: relative;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.105);
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(133, 23, 23, 0.1);
+    font-family: 'Georgia', serif; /* Serif font for reading mode */
+    line-height: 1.6; /* Increased line spacing for reading mode */
+    right: 3%;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    background-color: #fff;
+    
 }
-.info-section{
+.timer-section{
+    position: fixed; /* Fixes the element relative to the viewport */
+    top: 10%; /* Centers the element vertically */
+    right: 0%; /* Positions the element 10px from the right edge */
+    transform: translateY(-50%); /* Adjusts for the element's height */
+    padding: 10px 20px; /* Adds padding for the pill shape */
+    background-color: #4CAF50; /* Sets the background color */
+    color: rgb(110, 27, 27); /* Sets the text color */
+    border-radius: 50px; /* Rounds the corners to create the pill shape */
+    box-shadow: 0 4px 8px rgba(118, 53, 53, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers the text */
+
+}
+.info-section1{
    position:fixed;
-    padding-left: 2em;
+
+    right: 4%;
+    padding-top: 9%;
+    padding: 5px,5px;
+    
+    height: 2rem;
+    width: 2rem;
     background-image: -moz-repeating-radial-gradient();
-    background-color: azure;
-    border-radius: 2em;
-    border-color: beige;
+    background-color:rgb(161, 22, 108);
+    border-radius: 5px;
+    backface-visibility: visible;
+    border-color: rgb(201, 201, 33);
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);;
     
     font-palette:true;
     color: blueviolet;
+}
+.info-section{
+    position: fixed; /* Fixes the element relative to the viewport */
+    top: 27%; /* Centers the element vertically */
+    right: 0%; /* Positions the element 10px from the right edge */
+    transform: translateY(-50%); /* Adjusts for the element's height */
+    padding: 10px 20px; /* Adds padding for the pill shape */
+    background-color: #82af4c; /* Sets the background color */
+    color: rgb(141, 12, 83); /* Sets the text color */
+    border-radius: 50px; /* Rounds the corners to create the pill shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers the text */
+}
+.button-section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:3% ;
+    margin-top: 2%;
+    width: 200px;
+   
+    background-color: rgb(230, 173, 210);
+     margin-left: 40%;
+    line-height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(145, 59, 59, 0.1);
+    
+
 }
 
 .correct {
