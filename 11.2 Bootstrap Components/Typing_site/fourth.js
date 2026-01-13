@@ -10,6 +10,7 @@ const startButton = document.getElementById('start-button');
 const stopButton = document.getElementById('stop-button');
 const resumeButton = document.getElementById('resume-button');
 const timeSelect = document.getElementById('time-select');
+const seeScore = document.getElementById('seeScore');
 
 const words = wordsElement.innerText.split(' ');
 
@@ -23,7 +24,8 @@ function startTimer() {
             if (timer > 0) {
                 timer--;
                 timerElement.innerText = timer;
-            } else {
+            }  
+                else {
                 clearInterval(interval);
                 typingArea.disabled = true;
                 alert(`Time's up! Your score is ${score}`);
@@ -35,6 +37,17 @@ function startTimer() {
 function stopTimer() {
     clearInterval(interval);
     resumeButton.disabled = false;
+    seeScore.hide=false;
+    document.innerText('Do you Want to see Score')
+    const decision=document.querySelector('.seeScore');
+    if(decision ==='yes')
+    {
+         clearInterval(interval);
+                typingArea.disabled = true;
+                alert(`Time's up! Your score is ${score}`);
+    }
+    
+    return 0;  
 }
 
 function resumeTimer() {
@@ -60,12 +73,12 @@ function toggleMode(){
     if(eyeCatchtext.classList.contains('active')){
         eyeCatchtext.classList.remove('active');
          readingText.classList.add('active');
-        //button.textContent = 'Switching Mode';
+        button.textContent = 'Switching Mode';
     }
     else{
         readingText.classList.remove('active');
         eyeCatchtext.classList.add('active');
-        //button.textContent='Switching to read mode';
+    button.textContent='Switching to read mode';
     }
 }
 
