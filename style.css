@@ -61,6 +61,34 @@ body {
     background-color: #fff;
     
 }
+
+.words-section {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.typing-section {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.info-section{
+   position:fixed;
+    padding-left: 2em;
+    background-image: -moz-repeating-radial-gradient();
+    background-color: azure;
+    border-radius: 2em;
+    border-color: beige;
+    
+    font-palette:true;
+    color: blueviolet;
+}
+
+.correct {
+    color: green;
+}
 .timer-section{
     position: fixed; /* Fixes the element relative to the viewport */
     top: 10%; /* Centers the element vertically */

@@ -26,6 +26,7 @@ function startTimer() {
                 timerElement.innerText = timer;
             }  
                 else {
+            } else {
                 clearInterval(interval);
                 typingArea.disabled = true;
                 alert(`Time's up! Your score is ${score}`);
@@ -74,11 +75,13 @@ function toggleMode(){
         eyeCatchtext.classList.remove('active');
          readingText.classList.add('active');
         button.textContent = 'Switching Mode';
+        //button.textContent = 'Switching Mode';
     }
     else{
         readingText.classList.remove('active');
         eyeCatchtext.classList.add('active');
     button.textContent='Switching to read mode';
+        //button.textContent='Switching to read mode';
     }
 }
 
